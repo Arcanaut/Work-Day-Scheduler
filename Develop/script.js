@@ -4,7 +4,7 @@ var m = moment().format("dddd MMMM, Do");
 //gives the inline 
 $("#currentDay").text(m);
 
-var currentHour = (moment().format('H'));
+var currentHour = parseInt(moment().format('H'));
 
 
 //changes background-color according to time
@@ -12,7 +12,7 @@ var currentHour = (moment().format('H'));
 $(".timeblock").each(function(){
     var tB = $(this).attr("id")
     console.log(tB);
-if (tB === currentHour ) {
+if (tB == currentHour ) {
     
     $(this).children("textarea").addClass("present");
 }
