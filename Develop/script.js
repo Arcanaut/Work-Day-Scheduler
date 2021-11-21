@@ -24,7 +24,7 @@ $(".timeblock").each(function () {
 });
 
 
-saveSchedule = function () { 
+saveSchedule = function () {
     var textBoxArea = $(this).siblings("textarea").val();
     var textBoxID = $(this).parent().attr("id")
     localStorage.setItem(textBoxID, textBoxArea);
