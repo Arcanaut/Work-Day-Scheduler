@@ -20,6 +20,7 @@ $(".timeblock").each(function () {
     } else if (tB > currentHour) {
         $(this).children("textarea").addClass("future");
     }
+    console.log(tB);
 });
 
 
@@ -32,21 +33,16 @@ saveSchedule = function () {
 
 
 
-//save the text fields when save button is clicked
+//saves the text fields when save button is clicked
 $(".saveBtn").on("click", saveSchedule)
 
-// var textBoxArea = $(this).siblings(".hour").children("textarea").val();
-// var textBoxID = $(this).siblings(".hour").attr("id");
-// localStorage.setItem(textBoxID, textBoxArea);
 
-//description class, 
-
-$("#hour9").children("textarea").val(localStorage.getItem("hour9"));
-$("#hour10").children("textarea").val(localStorage.getItem("hour10"));
-$("#hour11").children("textarea").val(localStorage.getItem("hour11"));
-$("#hour12").children("textarea").val(localStorage.getItem("hour12"));
-$("#hour13").children("textarea").val(localStorage.getItem("hour13"));
-$("#hour14").children("textarea").val(localStorage.getItem("hour14"));
-$("#hour15").children("textarea").val(localStorage.getItem("hour15"));
-$("#hour16").children("textarea").val(localStorage.getItem("hour16"));
-$("#hour17").children("textarea").val(localStorage.getItem("hour17"));
+$("#9").children("textarea").val(localStorage.getItem("9"));
+$("#10").children("textarea").val(localStorage.getItem("10"));
+$("#11").children("textarea").val(localStorage.getItem("11"));
+$("#12").children("textarea").val(localStorage.getItem("12"));
+$("#13").children("textarea").val(localStorage.getItem("13"));
+$("#14").children("textarea").val(localStorage.getItem("14"));
+$("#15").children("textarea").val(localStorage.getItem("15"));
+$("#16").children("textarea").val(localStorage.getItem("16"));
+$("#17").children("textarea").val(localStorage.getItem("17"));
